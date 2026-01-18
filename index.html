@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio | Jvictor Videomaker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="PROPOSTA/img/favicon-32x32.png">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#Inicio" class="logo-link">
+      <img class="logo" src="PROPOSTA/img/LOGO HORIZONTAL PNG.png" alt="João Victor Videomaker">
+    </a>
+    <nav>
+      <a href="#Inicio" class="nav-link">Inicio</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#servicos" class="nav-link">Serviços</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+  </header>
+
+  <section id="Inicio" class="hero">
+    <div class="hero-text">
+      <h1>Portfólio</h1>
+      <span> João Victor Videomaker</span>
+    </div>
+  </section>
+
+  <section id="sobre" class="hero hero-sobre">
+    <div class="hero-overlay"></div>
+    <div class="hero-sobre-content">
+      <div class="sobre-box">
+        <h2>Quem é João Victor?</h2>
+        <p>
+          Olá, eu sou o João Victor! Tenho 16 anos. Minha trajetória no audiovisual começou há mais de um ano, movida por uma <br> verdadeira 
+           paixão por contar histórias através de vídeos.
+          <br><br>
+          Para mim, o vídeo é uma ferramenta poderosa para eternizar momentos inesquecíveis. Estou pronto para fazer parte da sua história!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="section reveal">
+    <h2>Serviços</h2>
+    <div class="services-menu">
+      <button data-category="institucional">Vídeos Institucionais</button>
+      <button data-category="historia">Minha História</button>
+      <button data-category="reels">Reels</button>
+      <button data-category="comercial">Formaturas</button>
+      <button data-category="social">Casamentos</button>
+      <button data-category="aniversarios">Aniversários</button>
+    </div>
+    <div id="gallery" class="gallery"></div>
+  </section>
+
+  <section id="contato" class="section reveal" style="display: flex; justify-content: center; align-items: center; padding: 60px 0;">
+  <div class="glass" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <h2>Contato</h2>
+    <p>Email: @jvictorvmaker@gmail.com</p>
+    <p style="margin-bottom: 20px;">Instagram: @jvictor.vmaker</p>
+    <a href="https://wa.me/5584991319547" target="_blank" style="text-decoration: none; display: flex; justify-content: center;">
+      <button style="cursor:pointer; background: #fff; color: #000; padding: 12px 25px; border-radius: 30px; border: none; font-weight: bold;">
+        Agendar minha Produção
+      </button>
+    </a>
+  </div>
+</section>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <button class="close">&times;</button>
+      <video id="modalVideo" controls></video>
+      <h3 id="videoTitle" style="margin-top: 10px;"></h3>
+    </div>
+  </div>
+
+  <footer class="footer">
+    © 2026 · João Victor Videomaker
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
